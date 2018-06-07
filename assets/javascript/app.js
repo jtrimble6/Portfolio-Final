@@ -45,3 +45,9 @@ $(".contact-click").click(function() {
     }, 800);
     return false;
 })
+
+$("body").on("click", "#textArea", function() {
+    var thisText = $("#textArea");
+    val = thisText.val();
+    thisText.focus().val("").val(val);
+})
